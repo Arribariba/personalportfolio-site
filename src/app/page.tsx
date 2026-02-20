@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden bg-stone-900">
+      <section className="pt-20 relative w-full h-[70vh] flex items-center justify-center overflow-hidden bg-stone-900">
         <Image
           src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=2070&auto=format&fit=crop"
           alt="Featured Analog Photo"
