@@ -28,27 +28,24 @@ export default function PortfolioPage() {
             onClick={() => setFilter('All')}
             className={`${filter === 'All' ? 'text-stone-900 border-b border-stone-900' : 'hover:text-stone-700'}`}
           >
-            Hepsi
-          </button>
-          <button 
-            onClick={() => setFilter('35mm')}
-            className={`${filter === '35mm' ? 'text-stone-900 border-b border-stone-900' : 'hover:text-stone-700'}`}
-          >
-            35mm
-          </button>
-          <button 
-            onClick={() => setFilter('120mm')}
-            className={`${filter === '120mm' ? 'text-stone-900 border-b border-stone-900' : 'hover:text-stone-700'}`}
-          >
-            120 (6x6)
-          </button>
-          <button 
-            onClick={() => setFilter('Digital')}
-            className={`${filter === 'Digital' ? 'text-stone-900 border-b border-stone-900' : 'hover:text-stone-700'}`}
-          >
-            Dijital
-          </button>
-        </div>
+          <div className="max-w-6xl mx-auto px-4 mt-16">
+  <h1 className="text-2xl font-medium mb-8">Projeler</h1>
+
+  <div className="flex gap-8 text-sm tracking-wide uppercase border-b border-stone-200 pb-4">
+    <button className="text-black border-b-2 border-black pb-2">
+      Hepsi
+    </button>
+    <button className="text-stone-400 hover:text-black transition">
+      35mm
+    </button>
+    <button className="text-stone-400 hover:text-black transition">
+      120 (6x6)
+    </button>
+    <button className="text-stone-400 hover:text-black transition">
+      Dijital
+    </button>
+  </div>
+</div>
       </header>
 
       <PhotoGallery photos={filteredPhotos} />
