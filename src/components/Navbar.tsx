@@ -19,9 +19,7 @@ export default function Navbar() {
 </Link>
           </div>
           <div className="hidden sm:flex space-x-8">
-            <Link href="/portfolio" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">
-              Calismalar
-            </Link>
+            <Link href="/portfolio">Projeler</Link>
             <Link href="/blog" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">
               Blog
             </Link>
