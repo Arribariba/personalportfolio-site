@@ -6,9 +6,16 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
-            <Link href="/" className="font-serif text-2xl font-bold text-stone-800 tracking-tight">
-              Analog Göz
-            </Link>
+            <Link href="/" className="flex items-center">
+  <Image
+    src="/logo.png"
+    alt="Logo"
+    width={60}
+    height={60}
+    priority
+  />
+</Link>
+
           </div>
           <div className="hidden sm:flex space-x-8">
             <Link href="/portfolio" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">
