@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  
+  --color-stone-50: #fdfbf7;
+  --color-stone-100: #f5f2ed;
+  --color-stone-200: #e7e2da;
+  --color-stone-300: #d6cfc3;
+  --color-stone-400: #a89f91;
+  --color-stone-500: #8d8171;
+  --color-stone-600: #716658;
+  --color-stone-700: #5a5146;
+  --color-stone-800: #463f37;
+  --color-stone-900: #2b2722;
+}
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #2b2722;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.grain-overlay {
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  /* Alternatively a SVG filter for grain */
+  filter: contrast(150%) brightness(100%);
+}
+
+/* Custom styles for the album look */
+.photo-album-card {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-album-card:hover {
+  transform: rotate(1deg) scale(1.02);
+}
