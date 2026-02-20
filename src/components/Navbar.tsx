@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -7,14 +8,16 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
+ <Link href="/" className="flex items-center">
   <Image
     src="/logo.png"
     alt="Logo"
-    width={60}
-    height={60}
+    width={70}
+    height={70}
     priority
   />
 </Link>
+
 
           </div>
           <div className="hidden sm:flex space-x-8">
