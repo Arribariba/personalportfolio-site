@@ -18,14 +18,7 @@ export default function Navbar() {
   />
 </Link>
           </div>
-          <div className="hidden sm:flex space-x-8">
-            <Link href="/portfolio">Projeler</Link>
-            <Link href="/blog" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">
-              Blog
-            </Link>
-            <Link href="/about" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">
-              Hakkımda
-            </Link>
+          <Link href="/portfolio">Projeler</Link>
           </div>
           {/* Mobile menu button could go here if needed */}
         </div>
